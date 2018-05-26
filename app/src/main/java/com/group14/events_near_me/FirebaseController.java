@@ -28,7 +28,7 @@ public class FirebaseController {
     public FirebaseController() {
         firebaseAuth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance("https://com2027-group14-1519651413217.firebaseio.com/");
-        database.setPersistenceEnabled(true);
+        database.setPersistenceEnabled(false);
         ref = database.getReference();
     }
 
